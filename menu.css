@@ -1,0 +1,141 @@
+main {
+    background-image: url('./resource/image/menu-baner.png');
+    background-size:contain;
+}
+*{
+    margin:0px 0px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* title   */
+.title-menu {
+    
+    text-align: center;
+    padding-top: 40px;
+    height: 100px;
+    background-color:white;
+    color: #323031;
+    font-size: 30px;
+    opacity: 0.9;
+    margin-top:40px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+/* Menu (include nav and food-menu */
+.menu{
+    display: flex;
+ 
+
+}
+/* nav-menu :*/
+.nav-menu {
+    
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-width: 120px; 
+    justify-content: flex-start;
+    text-align: center;
+    position: sticky;
+    margin-top:20px;
+    top: 30px;
+    align-self: flex-start  /* set to flex-start  to make the sticky position working when using flex-box */
+}
+.nav-menu a{
+    all:unset;
+
+}
+.nav-menu p {
+    
+    padding: 10px 5px;
+    background-color: #FFC857;
+    color:#323031;
+    border-radius: 6px;
+    box-shadow: 5px 5px 8px #676e6a;
+    margin: 20px 20px;   
+}
+
+.nav-menu :hover{
+    background-color:#323031;
+    color:#FFC857;
+    cursor: pointer;  
+}
+
+/*food-menu section: */
+.menu-section{
+    display:block;
+
+}
+.menu-title{
+    text-align: center;
+    padding:20px; 
+    font-size: 24px;
+    color:#177e89; 
+    font-family: 'Josefin Sans', sans-serif; 
+}
+
+.menu-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin : 10px 10px  ;
+}
+
+.menu-card {
+
+    box-shadow: 5px 5px 8px #899bbd;
+    background-color: white;
+    width: 300px;
+    min-width:50px;
+    height: 310px;  
+    margin: 15px;
+    padding: 20px 5px;
+    text-align: justify;
+    text-justify: inter-word;
+    border-radius: 8px;
+}
+
+.menu-card h3,
+.menu-card p {
+    text-align: center;
+}
+.menu-card h3{
+    color: #FFC857;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.menu-card figure {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-picture {
+    float: left;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    padding: 20px auto;
+}
+
+.menu-card p {
+    height: 70px;
+    color: #323031;
+}
+
+.menu-price {
+    font-weight: bold;
+    float: right;
+    
+    padding-right: 5px;
+}
+
+
+
+
