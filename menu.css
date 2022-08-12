@@ -1,9 +1,13 @@
-main {
-    background-image: url('./resource/image/menu-baner.png');
-    background-size:contain;
-}
 *{
     margin:0px 0px;
+}
+
+.menu-page{
+    position: relative;
+    /* with background image i used linear-gradients to get an opacity effect on the image without affecting  the children of the element*/
+    background-image: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)),url('./resource/image/Menu-page/menu-baner.png');
+    background-size:contain;
+    
 }
 
 p {
@@ -12,34 +16,31 @@ p {
 
 /* title   */
 .title-menu {
-    
+    box-sizing: border-box;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 50px;
     height: 100px;
     background-color:white;
     color: #323031;
     font-size: 30px;
     opacity: 0.9;
-    margin-top:40px;
+    margin-top:20px;
     font-family: 'Josefin Sans', sans-serif;
 
 }
 
-/* Menu (include nav and food-menu */
+/* Menu (container for nav and food-menu */
 .menu{
     display: flex;
- 
-
 }
 /* nav-menu :*/
-.nav-menu {
-    
+.nav-menu {   
     display: flex;
     flex-direction: column;
     width: 300px;
     min-width: 120px; 
     justify-content: flex-start;
-    text-align: center;
+    text-align:center;
     position: sticky;
     margin-top:20px;
     top: 30px;
@@ -47,10 +48,8 @@ p {
 }
 .nav-menu a{
     all:unset;
-
 }
 .nav-menu p {
-    
     padding: 10px 5px;
     background-color: #FFC857;
     color:#323031;
@@ -65,7 +64,7 @@ p {
     cursor: pointer;  
 }
 
-/*food-menu section: */
+/*menu-section (parent of the menu-title class & menu-category class containers (starter/mains/desert/drinks) */
 .menu-section{
     display:block;
 
@@ -87,7 +86,6 @@ p {
 }
 
 .menu-card {
-
     box-shadow: 5px 5px 8px #899bbd;
     background-color: white;
     width: 300px;
